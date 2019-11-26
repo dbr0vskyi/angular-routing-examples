@@ -58,6 +58,7 @@ export const routes: Routes = [
     RouterModule.forRoot(routes, {
       enableTracing: true,
       // useHash: true
+      // preloadingStrategy: PreloadAllModules
     }),
   ],
   exports: [RouterModule],

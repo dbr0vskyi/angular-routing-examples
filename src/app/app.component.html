@@ -1,0 +1,30 @@
+<div>
+  <h1>
+    Welcome to Angular Routing!
+  </h1>
+
+  <div class="router-links">
+    <a routerLink="../home"
+       [routerLinkActive]="'active-route'">Home page</a>
+
+    <a [routerLink]="['./page-with-params', 10, 'video']"
+       [routerLinkActive]="'active-route'">Page with params</a>
+
+    <button class="text-link"
+            type="button"
+            (click)="goToPageWithParams()">Navigate programmatically</button>
+
+    <a routerLink="./cant-leave-page"
+       [routerLinkActive]="'active-route'">Can't leave page</a>
+
+    <a [routerLink]="['./admin']"
+       [routerLinkActive]="'active-route'">Admin (lazy load + guard)</a>
+
+    <a [routerLink]="['./page-with-children']"
+       [routerLinkActive]="'active-route'">Page with children</a>
+  </div>
+
+  <main>
+    <router-outlet></router-outlet>
+  </main>
+</div>

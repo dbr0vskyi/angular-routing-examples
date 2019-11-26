@@ -1,0 +1,9 @@
+<div>
+  <h2>Page with children</h2>
+
+  <div class="router-links">
+    <a [routerLink]="['./child-a']" [routerLinkActive]="'active'">Child A</a>
+    <a [routerLink]="['./child-b']" [routerLinkActive]="'active'">Child B</a>
+  </div>
+  <router-outlet></router-outlet>
+</div>

@@ -57,6 +57,7 @@ export const routes: Routes = [
     AuthModule,
     RouterModule.forRoot(routes, {
       enableTracing: true,
+      // useHash: true
     }),
   ],
   exports: [RouterModule],

@@ -22,6 +22,6 @@ export class AppComponent {
     });
 
     // navigateByUrl(url: string, extras: NavigationExtras = { skipLocationChange: false }): Promise<boolean>
-    // this.router.navigateByUrl('/pageWithParams/2/video', {queryParams: { id: 1}});
+    // this.router.navigateByUrl('/page-with-params/231/photo-video', {queryParams: { id: 1}});
   }
 }
